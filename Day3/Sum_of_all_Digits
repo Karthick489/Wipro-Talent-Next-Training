@@ -1,0 +1,14 @@
+
+public class DigitsSum {
+    public static int evenOddDigitsSum(int input1, String input2) {
+        int evenSum = 0;
+        int totalSum = 0;
+
+        while (input1 != 0) {
+            int digit = input1 % 10;
+            totalSum += digit;
+            input1 /= 10;
+        }
+       return totalSum;
+    }
+}
